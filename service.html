@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone Middle East</title>
+    <link rel="icon" href="./assets/images/logos/logo.jpeg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: #101010;
+        color: white;
+        font-family: "Arial", sans-serif; /* Customize the font-family */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="py-4 md:px-20">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Replace src with your logo image link -->
+        <div
+          data-aos="fade-down"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1500"
+        >
+          <a href="/" class="text-white text-lg font-bold">
+            <img
+              src="https://saudi.idasummit.com/_next/image?url=%2Fimages%2Flogos%2Flogo.png&w=256&q=75"
+              alt="Logo"
+              class="mr-2"
+              style="width: 120px"
+            />
+          </a>
+        </div>
+        <div class="flex">
+          <div
+            data-aos="fade-down"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500"
+          >
+            <a
+              href="/#home"
+              class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Home</a
+            >
+          </div>
+          <div
+            data-aos="fade-down"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500"
+          >
+            <a
+              href="/#about"
+              class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >About</a
+            >
+          </div>
+
+          <div
+            data-aos="fade-down"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500"
+          >
+            <a
+              href="/#services"
+              class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Services</a
+            >
+          </div>
+
+          <div
+            data-aos="fade-down"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500"
+          >
+            <a
+              href="/#contact"
+              class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      style="
+        background-image: url('./assets/images/hero.jpeg');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      "
+    >
+      <div class="md:mx-20 mx-4 pb-12">
+        <div class="flex md:flex-row justify-between">
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="text-4xl md:text-8xl font-thin mb-4 mt-5 z-10"
+          >
+            Our <br />
+            Services <br />
+          </h3>
+          <h3
+            id="heading"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="text-4xl md:text-5xl font-thin mb-4 mt-5 text white"
+          ></h3>
+        </div>
+        <div class="w-full flex justify-end -mt-28">
+          <img
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            style="
+              width: 800px;
+              height: 300px;
+              object-fit: cover;
+              border-radius: 20px;
+            "
+            id="img"
+          />
+        </div>
+        <h3
+          id="sub_title"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="text-4xl md:text-4xl font-thin mb-4 mt-5 text white"
+        ></h3>
+        <p data-aos="fade-up" data-aos-duration="1000" id="para"></p>
+        <h3
+          id="heading_one"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="text-4xl md:text-82xl font-thin mb-4 mt-5 text white"
+        ></h3>
+        <p data-aos="fade-up" data-aos-duration="1000" id="para_one"></p>
+      </div>
+    </div>
+    <div class="md:mx-20 mx-4 pb-12">
+      <h3
+        id="heading_two"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="text-4xl md:text-82xl font-thin mb-4 mt-5 text white"
+      ></h3>
+      <p data-aos="fade-up" data-aos-duration="1000" id="para_two"></p>
+      <h3
+        id="heading_three"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="text-4xl md:text-82xl font-thin mb-4 mt-5 text white"
+      ></h3>
+      <p data-aos="fade-up" data-aos-duration="1000" id="para_three"></p>
+    </div>
+
+    <footer class="bg-black py-4">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row flex-wrap justify-between items-center"
+        >
+          <!-- Logo and back to top -->
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://saudi.idasummit.com/_next/image?url=%2Fimages%2Flogos%2Flogo.png&w=256&q=75"
+              alt="Logo"
+              class="h-8"
+            />
+            <button
+              onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+              class="text-sm uppercase hover:underline"
+            >
+              Back to Top
+            </button>
+          </div>
+
+          <!-- Navigation -->
+          <div class="flex flex-col space-y-6 mt-4 lg:mt-0 pt-10">
+            <a href="/#home" class="hover:underline">Home</a>
+            <a href="/#about" class="hover:underline">About</a>
+            <a href="/#services" class="hover:underline">Our services</a>
+            <a href="/#contact" class="hover:underline">Contact</a>
+          </div>
+
+          <!-- Contact Email -->
+          <div class="mt-4 lg:mt-0">
+            <a href="mailto:info@capstonemiddleeast.com" class="hover:underline"
+              >info@capstonemiddleeast.com</a
+            >
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center text-gray-500 text-xs mt-4 lg:mt-8">
+          Copyright © 2024 All rights reserved | Capstone GLOBAL
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, "\\$&");
+        const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return "";
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const title = getParameterByName("title");
+        const description = getParameterByName("description");
+        const sub_title = getParameterByName("sub_title");
+        const heading_one = getParameterByName("heading_one");
+        const heading_two = getParameterByName("heading_two");
+        const heading_three = getParameterByName("heading_three");
+        const para_one = getParameterByName("paraone");
+        const para_two = getParameterByName("paratwo");
+        const para_three = getParameterByName("parathree");
+        const img = getParameterByName("img");
+
+        document.getElementById("heading").innerHTML = title; // Corrected ID reference
+        document.getElementById("sub_title").innerHTML = sub_title;
+        document.getElementById("para").innerHTML = description;
+        document.getElementById("heading_one").innerHTML = heading_one;
+        document.getElementById("heading_two").innerHTML = heading_two;
+        document.getElementById("heading_three").innerHTML = heading_three;
+        document.getElementById("para_one").innerHTML = para_one;
+        document.getElementById("para_two").innerHTML = para_two;
+        document.getElementById("para_three").innerHTML = para_three;
+        document.getElementById("img").src = img;
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"
+      defer
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
+    </script>
+  </body>
+</html>
