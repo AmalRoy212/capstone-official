@@ -120,7 +120,7 @@
             id="heading"
             data-aos="fade-up"
             data-aos-duration="1000"
-            class="text-4xl md:text-5xl font-thin mb-4 mt-5 text white"
+            class="text-4xl md:text-5xl font-thin mb-4 mt-5 text-white z-10"
           ></h3>
         </div>
         <div class="w-full flex justify-end -mt-28">
@@ -132,10 +132,25 @@
               height: 300px;
               object-fit: cover;
               border-radius: 20px;
+              opacity: 0.5;
             "
             id="img"
           />
+          <!-- <div
+            style="
+              background: linear-gradient(
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0.651)
+              );
+            "
+          ></div> -->
         </div>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          id="expara"
+          class="py-4"
+        ></p>
         <h3
           id="sub_title"
           data-aos="fade-up"
@@ -143,30 +158,113 @@
           class="text-4xl md:text-4xl font-thin mb-4 mt-5 text white"
         ></h3>
         <p data-aos="fade-up" data-aos-duration="1000" id="para"></p>
-        <h3
-          id="heading_one"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          class="text-4xl md:text-82xl font-thin mb-4 mt-5 text white"
-        ></h3>
-        <p data-aos="fade-up" data-aos-duration="1000" id="para_one"></p>
       </div>
     </div>
-    <div class="md:mx-20 mx-4 pb-12">
+
+    <div class="md:mx-20 mx-4 pb-12 md:px-20">
+      <h3
+        id="heading_one"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="text-4xl md:text-2xl text-center font-thin mb-4 mt-5 text-white md:mx-20 mx-4 pb-12 md:px-20"
+      ></h3>
+      <p data-aos="fade-up" data-aos-duration="1000" id="para_one"></p>
       <h3
         id="heading_two"
         data-aos="fade-up"
         data-aos-duration="1000"
-        class="text-4xl md:text-82xl font-thin mb-4 mt-5 text white"
+        class="text-4xl md:text-2xl text-center font-thin mb-4 mt-5 text white"
       ></h3>
       <p data-aos="fade-up" data-aos-duration="1000" id="para_two"></p>
       <h3
         id="heading_three"
         data-aos="fade-up"
         data-aos-duration="1000"
-        class="text-4xl md:text-82xl font-thin mb-4 mt-5 text white"
+        class="text-4xl md:text-2xl text-center font-thin mb-4 mt-5 text white"
       ></h3>
       <p data-aos="fade-up" data-aos-duration="1000" id="para_three"></p>
+      <h3
+        id="heading_four"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="text-4xl md:text-2xl text-center font-thin mb-4 mt-5 text white"
+      ></h3>
+      <p data-aos="fade-up" data-aos-duration="1000" id="para_four"></p>
+      <h3
+        id="heading_five"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="text-4xl md:text-2xl text-center font-thin mb-4 mt-5 text white"
+      ></h3>
+      <p data-aos="fade-up" data-aos-duration="1000" id="para_five"></p>
+    </div>
+
+    <!-- bullet paragraphs -->
+    <div
+      style="
+        background-image: url('./assets/images/bg1.jpeg');
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      "
+    >
+      <div class="px-20" id="bullet">
+        <h3
+          id="bullet_heading"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="text-4xl md:text-2xl font-thin mb-4 mt-5 text white"
+        ></h3>
+        <div class="md:px-10">
+          <p data-aos="fade-up" data-aos-duration="1000" id="bullet_para"></p>
+          <div class="md:px-10 py-2 mb-2">
+            <ul data-aos="fade-up" data-aos-duration="1000">
+              <li class="flex gap-4 mt-2">• <span id="bulletOne"></span></li>
+              <li class="flex gap-4 mt-2">• <span id="bulletTwo"></span></li>
+              <li class="flex gap-4 mt-2">• <span id="bulletThree"></span></li>
+              <li class="flex gap-4 mt-2">• <span id="bulletFour"></span></li>
+              <li class="flex gap-4 mt-2">• <span id="bulletFive"></span></li>
+            </ul>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="1000" id="bulletTail"></p>
+        </div>
+      </div>
+
+      <div class="px-20" id="bullet_1">
+        <h3
+          id="bulletHeadingTwo"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="text-4xl md:text-2xl font-thin mb-4 mt-5 text white"
+        ></h3>
+        <div class="md:px-10">
+          <p data-aos="fade-up" data-aos-duration="1000" id="bulletparaTwo"></p>
+          <div class="md:px-10 py-2 mb-2">
+            <ul data-aos="fade-up" data-aos-duration="1000">
+              <li class="flex gap-4 mt-2">• <span id="bulletTwoOne"></span></li>
+              <li class="flex gap-4 mt-2">• <span id="bulletTwoTwo"></span></li>
+              <li class="flex gap-4 mt-2">
+                • <span id="bulletTwoThree"></span>
+              </li>
+              <li class="flex gap-4 mt-2">
+                • <span id="bulletTwoFour"></span>
+              </li>
+            </ul>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="1000" id="bulletTwoTail"></p>
+        </div>
+      </div>
+
+      <!-- tails paragraphs -->
+      <div class="mb-20 mx-4 md:mx-20">
+        <h3
+          id="heading_tail"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="text-4xl md:text-82xl font-thin mb-4 mt-5 text white"
+        ></h3>
+        <p data-aos="fade-up" data-aos-duration="1000" id="para_tail"></p>
+      </div>
     </div>
 
     <footer class="bg-black py-4">
@@ -223,17 +321,45 @@
 
       document.addEventListener("DOMContentLoaded", function () {
         const title = getParameterByName("title");
+        const expara = getParameterByName("expara");
         const description = getParameterByName("description");
         const sub_title = getParameterByName("sub_title");
         const heading_one = getParameterByName("heading_one");
         const heading_two = getParameterByName("heading_two");
+        const headingFive = getParameterByName("headingFive");
+        const paraFive = getParameterByName("paraFive");
+        const headingFour = getParameterByName("headingFour");
+        const tailheading = getParameterByName("tailheading");
+        const paraFour = getParameterByName("paraFour");
+        const tailpara = getParameterByName("tailpara");
         const heading_three = getParameterByName("heading_three");
         const para_one = getParameterByName("paraone");
         const para_two = getParameterByName("paratwo");
         const para_three = getParameterByName("parathree");
         const img = getParameterByName("img");
+        const bulletHeading = getParameterByName("bulletHeading");
+        const bulletpara = getParameterByName("bulletpara");
+        const bulletOne = getParameterByName("bulletOne");
+        const bulletTwo = getParameterByName("bulletTwo");
+        const bulletThree = getParameterByName("bulletThree");
+        const bulletFour = getParameterByName("bulletFour");
+        const bulletFive = getParameterByName("bulletFive");
+        const bulletTail = getParameterByName("bulletTail");
+        const bulletHeadingTwo = getParameterByName("bulletHeadingTwo");
+        const bulletparaTwo = getParameterByName("bulletparaTwo");
+        const bulletTwoOne = getParameterByName("bulletTwoOne");
+        const bulletTwoTwo = getParameterByName("bulletTwoTwo");
+        const bulletTwoThree = getParameterByName("bulletTwoThree");
+        const bulletTwoFour = getParameterByName("bulletTwoFour");
+        const bulletTwoTail = getParameterByName("bulletTwoTail");
 
-        document.getElementById("heading").innerHTML = title; // Corrected ID reference
+        if (!bulletThree)
+          document.getElementById("bullet").style.display = "none";
+        if (!bulletTwoOne)
+          document.getElementById("bullet_1").style.display = "none";
+
+        document.getElementById("heading").innerHTML = title;
+        document.getElementById("expara").innerHTML = expara;
         document.getElementById("sub_title").innerHTML = sub_title;
         document.getElementById("para").innerHTML = description;
         document.getElementById("heading_one").innerHTML = heading_one;
@@ -242,7 +368,30 @@
         document.getElementById("para_one").innerHTML = para_one;
         document.getElementById("para_two").innerHTML = para_two;
         document.getElementById("para_three").innerHTML = para_three;
+        document.getElementById("heading_four").innerHTML = headingFour;
+        document.getElementById("para_four").innerHTML = paraFour;
+        document.getElementById("heading_five").innerHTML = headingFive;
+        document.getElementById("para_five").innerHTML = paraFive;
+        document.getElementById("para_tail").innerHTML = tailpara;
+        document.getElementById("heading_tail").innerHTML = tailheading;
         document.getElementById("img").src = img;
+        document.getElementById("bullet_heading").innerHTML = bulletHeading;
+        document.getElementById("bullet_para").innerHTML = bulletpara;
+        document.getElementById("bulletOne").innerHTML = bulletOne;
+        document.getElementById("bulletTwo").innerHTML = bulletTwo;
+        document.getElementById("bulletThree").innerHTML = bulletThree;
+        document.getElementById("bulletFour").innerHTML = bulletFour;
+        document.getElementById("bulletFive").innerHTML = bulletFive;
+        document.getElementById("bulletTail").innerHTML = bulletTail;
+        document.getElementById("bulletHeadingTwo").innerHTML =
+          bulletHeadingTwo;
+        document.getElementById("bulletparaTwo").innerHTML = bulletparaTwo;
+        document.getElementById("bulletTwoOne").innerHTML = bulletTwoOne;
+        document.getElementById("bulletTwoTwo").innerHTML = bulletTwoTwo;
+        document.getElementById("bulletparaTwo").innerHTML = bulletparaTwo;
+        document.getElementById("bulletTwoThree").innerHTML = bulletTwoThree;
+        document.getElementById("bulletTwoFour").innerHTML = bulletTwoFour;
+        document.getElementById("bulletTwoTail").innerHTML = bulletTwoTail;
       });
     </script>
 
