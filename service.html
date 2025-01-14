@@ -231,7 +231,7 @@
         overflow: hidden;
       "
     >
-      <!-- <div class="px-20" id="bullet">
+      <div class="px-20" id="bullet">
         <h3
           id="bullet_heading"
           data-aos="fade-up"
@@ -251,9 +251,9 @@
           </div>
           <p data-aos="fade-up" data-aos-duration="1000" id="bulletTail"></p>
         </div>
-      </div> -->
+      </div>
 
-      <div id="training_bull" class="px-20" style="display: none">
+      <div id="training_bull" class="px-20" style="display: none; flex-direction: column;">
         <h3
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -457,7 +457,7 @@
         </div>
       </div>
 
-      <!-- <div class="px-20" id="bullet_1">
+      <div class="px-20" id="bullet_1">
         <h3
           id="bulletHeadingTwo"
           data-aos="fade-up"
@@ -480,7 +480,7 @@
           </div>
           <p data-aos="fade-up" data-aos-duration="1000" id="bulletTwoTail"></p>
         </div>
-      </div> -->
+      </div>
 
       <!-- tails paragraphs -->
       <div class="mb-20 mx-4 md:mx-20">
@@ -592,7 +592,7 @@
           document.getElementById("bullet").style.display = "none";
         if (!bulletTwoOne)
           document.getElementById("bullet_1").style.display = "none";
-        if (!training)
+        if (training)
           document.getElementById("training_bull").style.display = "flex";
         if (cxo) {
           document.getElementById("cxo").style.display = "flex";
