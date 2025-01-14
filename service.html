@@ -231,7 +231,7 @@
         overflow: hidden;
       "
     >
-      <div class="px-20" id="bullet">
+      <!-- <div class="px-20" id="bullet">
         <h3
           id="bullet_heading"
           data-aos="fade-up"
@@ -251,9 +251,127 @@
           </div>
           <p data-aos="fade-up" data-aos-duration="1000" id="bulletTail"></p>
         </div>
+      </div> -->
+
+      <div id="training_bull" class="px-20" style="display: none">
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="text-4xl md:text-2xl font-thin mb-4 mt-5 text white"
+        >
+          Engaging and Contemporary Learning Methodologies
+        </h3>
+        <div class="md:px-10">
+          <p data-aos="fade-up" data-aos-duration="1000">
+            At Capstone, we embrace modern, interactive learning methodologies
+            that go beyond the traditional classroom approach. Our training
+            modules incorporate:
+          </p>
+          <div class="md:px-10 py-2 mb-2">
+            <ul data-aos="fade-up" data-aos-duration="1000">
+              <li class="flex gap-4 mt-2">
+                •
+                <span
+                  >Case Studies: Real-world business scenarios to facilitate
+                  experiential learning.</span
+                >
+              </li>
+              <li class="flex gap-4 mt-2">
+                •
+                <span
+                  >Practical Scenarios: Hands-on problem-solving exercises to
+                  enhance critical thinking and decision-making.</span
+                >
+              </li>
+              <li class="flex gap-4 mt-2">
+                •
+                <span
+                  >Self-Assessment Tools: Pre-assessments and post-training
+                  evaluations to measure knowledge acquisition and identify
+                  areas for improvement.</span
+                >
+              </li>
+              <li class="flex gap-4 mt-2">
+                •
+                <span
+                  >Collaborative Exercises: Team-based activities that foster
+                  collaboration, leadership, and communication skills.</span
+                >
+              </li>
+              <li class="flex gap-4 mt-2">
+                •
+                <span
+                  >Pre-Course Evaluations: Detailed assessments before the
+                  course begins to customize the training content according to
+                  the specific needs and skill levels of the participants.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            These methodologies foster a dynamic, engaging learning environment,
+            ensuring that employees not only retain knowledge but also gain the
+            confidence to apply their newfound skills effectively within your
+            organization.
+          </p>
+          <h3
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="text-4xl md:text-2xl font-thin mb-4 mt-5 text white"
+          >
+            Impactful Results for Tangible Business Growth
+          </h3>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            The success of our training programs extends far beyond just
+            knowledge transfer. At Capstone Trainings, we are focused on
+            delivering outcomes that positively impact your organization’s
+            bottom line. Our training solutions are designed to:
+          </p>
+          <ul data-aos="fade-up" data-aos-duration="1000">
+            <li class="flex gap-4 mt-2">
+              •
+              <span
+                >Enhance Individual Skills: Empower your employees with the
+                skills needed to excel in their roles, contributing to improved
+                job performance and higher productivity.</span
+              >
+            </li>
+            <li class="flex gap-4 mt-2">
+              •
+              <span
+                >Foster Innovation: Equip your teams with innovative strategies,
+                tools, and techniques that allow them to think creatively and
+                drive business growth.</span
+              >
+            </li>
+            <li class="flex gap-4 mt-2">
+              •
+              <span
+                >Achieve Certification: Offer recognized certifications that
+                provide your employees with credible, industry-standard
+                qualifications, boosting both their professional growth and your
+                organization's reputation.</span
+              >
+            </li>
+            <li class="flex gap-4 mt-2">
+              •
+              <span
+                >Drive Financial Growth: By improving processes, enhancing team
+                collaboration, and fostering innovation, our training programs
+                directly contribute to cost savings, increased efficiency, and
+                greater profitability.</span
+              >
+            </li>
+          </ul>
+          <p data-aos="fade-up" data-aos-duration="1000">
+            Our focus is not just on theoretical knowledge but on creating a
+            long-term impact that drives real change within your organization,
+            leading to tangible financial results and business success.
+          </p>
+        </div>
       </div>
 
-      <div class="px-20">
+      <div id="cxo" class="px-20" style="display: none">
         <h3
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -262,7 +380,7 @@
           Why Choose Capstone’s B2B CXO Boardrooms?
         </h3>
 
-        <div class="md:px-10" style="display: none" id="cxo">
+        <div class="md:px-10">
           <p data-aos="fade-up" data-aos-duration="1000"></p>
           <div class="md:px-10 py-2 mb-2">
             <ul data-aos="fade-up" data-aos-duration="1000">
@@ -339,7 +457,7 @@
         </div>
       </div>
 
-      <div class="px-20" id="bullet_1">
+      <!-- <div class="px-20" id="bullet_1">
         <h3
           id="bulletHeadingTwo"
           data-aos="fade-up"
@@ -362,7 +480,7 @@
           </div>
           <p data-aos="fade-up" data-aos-duration="1000" id="bulletTwoTail"></p>
         </div>
-      </div>
+      </div> -->
 
       <!-- tails paragraphs -->
       <div class="mb-20 mx-4 md:mx-20">
@@ -468,11 +586,14 @@
         const bulletTwoFour = getParameterByName("bulletTwoFour");
         const bulletTwoTail = getParameterByName("bulletTwoTail");
         const cxo = getParameterByName("cxo");
+        const training = getParameterByName("training");
 
         if (!bulletThree)
           document.getElementById("bullet").style.display = "none";
         if (!bulletTwoOne)
           document.getElementById("bullet_1").style.display = "none";
+        if (!training)
+          document.getElementById("training_bull").style.display = "flex";
         if (cxo) {
           document.getElementById("cxo").style.display = "flex";
           document.getElementById("fifth").style.display = "flex";
